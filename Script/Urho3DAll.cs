@@ -26,6 +26,8 @@ class Urho3DAll
                 continue;
             if (str.StartsWith("Urho3D/Graphics/OpenGL"))
                 continue;
+            if (str.StartsWith("Urho3D/Database"))
+                continue;
             if (str == "Urho3D/LuaScript/ToluaUtils.h")
                 continue;
             if (str == "Urho3D/DebugNew.h")
@@ -40,6 +42,10 @@ class Urho3DAll
             result.WriteLine(str);
         }
 
+        result.WriteLine();
+        result.WriteLine("#if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)");
+        result.WriteLine("    #include <Urho3D/Database/Database.h>");
+        result.WriteLine("#endif");
         result.WriteLine();
         result.WriteLine("#include <Urho3D/DebugNew.h>");
         result.WriteLine();

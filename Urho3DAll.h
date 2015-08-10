@@ -266,6 +266,10 @@
 #include <Urho3D/Urho2D/TmxFile2D.h>
 #include <Urho3D/Urho2D/Urho2D.h>
 
+#if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)
+    #include <Urho3D/Database/Database.h>
+#endif
+
 #include <Urho3D/DebugNew.h>
 
 using namespace Urho3D;
