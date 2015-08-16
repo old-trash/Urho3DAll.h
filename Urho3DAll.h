@@ -145,7 +145,7 @@
 #include <Urho3D/Math/Vector3.h>
 #include <Urho3D/Math/Vector4.h>
 #include <Urho3D/Navigation/CrowdAgent.h>
-#include <Urho3D/Navigation/DetourCrowdManager.h>
+#include <Urho3D/Navigation/CrowdManager.h>
 #include <Urho3D/Navigation/DynamicNavigationMesh.h>
 #include <Urho3D/Navigation/NavArea.h>
 #include <Urho3D/Navigation/NavBuildData.h>
