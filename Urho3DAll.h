@@ -1,3 +1,6 @@
+// Version: 2015.08.16 16:41:20
+// Latest version: https://github.com/1vanK/Urho3DAll.h
+
 #pragma once
 
 #include <Urho3D/Urho3D.h>

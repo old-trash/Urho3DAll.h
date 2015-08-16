@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 
 class Urho3DAll
@@ -12,6 +13,9 @@ class Urho3DAll
             PATH += '/';
 
         StreamWriter result = File.CreateText("Urho3DAll.h");
+        result.WriteLine("// Version: " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+        result.WriteLine("// Latest version: https://github.com/1vanK/Urho3DAll.h");
+        result.WriteLine();
         result.WriteLine("#pragma once");
         result.WriteLine();
         result.WriteLine("#include <Urho3D/Urho3D.h>");
