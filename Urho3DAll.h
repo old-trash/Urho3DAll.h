@@ -1,4 +1,4 @@
-// Version: 2015.08.16 16:41:20
+// Version: 2015.09.07 22:28:36
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -232,7 +232,6 @@
 #include <Urho3D/UI/View3D.h>
 #include <Urho3D/UI/Window.h>
 #include <Urho3D/Urho2D/AnimatedSprite2D.h>
-#include <Urho3D/Urho2D/Animation2D.h>
 #include <Urho3D/Urho2D/AnimationSet2D.h>
 #include <Urho3D/Urho2D/CollisionBox2D.h>
 #include <Urho3D/Urho2D/CollisionChain2D.h>
