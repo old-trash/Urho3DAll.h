@@ -49,6 +49,9 @@ class Urho3DAll
         result.WriteLine();
         result.WriteLine("#if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)");
         result.WriteLine("    #include <Urho3D/Database/Database.h>");
+        result.WriteLine("    #include <Urho3D/Database/DatabaseEvents.h>");
+        result.WriteLine("    #include <Urho3D/Database/DbConnection.h>");
+        result.WriteLine("    #include <Urho3D/Database/DbResult.h>");
         result.WriteLine("#endif");
         result.WriteLine();
         result.WriteLine("#include <Urho3D/DebugNew.h>");

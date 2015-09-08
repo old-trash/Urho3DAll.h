@@ -1,4 +1,4 @@
-// Version: 2015.09.07 22:28:36
+// Version: 2015.09.09 01:49:37
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -260,6 +260,8 @@
 #include <Urho3D/Urho2D/Renderer2D.h>
 #include <Urho3D/Urho2D/RigidBody2D.h>
 #include <Urho3D/Urho2D/Sprite2D.h>
+#include <Urho3D/Urho2D/SpriterData2D.h>
+#include <Urho3D/Urho2D/SpriterInstance2D.h>
 #include <Urho3D/Urho2D/SpriteSheet2D.h>
 #include <Urho3D/Urho2D/StaticSprite2D.h>
 #include <Urho3D/Urho2D/TileMap2D.h>
@@ -270,6 +272,9 @@
 
 #if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)
     #include <Urho3D/Database/Database.h>
+    #include <Urho3D/Database/DatabaseEvents.h>
+    #include <Urho3D/Database/DbConnection.h>
+    #include <Urho3D/Database/DbResult.h>
 #endif
 
 #include <Urho3D/DebugNew.h>
