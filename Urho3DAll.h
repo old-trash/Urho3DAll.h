@@ -1,4 +1,4 @@
-// Version: 2015.09.09 01:49:37
+// Version: 2015.09.30 03:37:32
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -6,6 +6,13 @@
 #include <Urho3D/Urho3D.h>
 
 #include <Urho3D/Revision.h>
+#include <Urho3D/AngelScript/Addons.h>
+#include <Urho3D/AngelScript/APITemplates.h>
+#include <Urho3D/AngelScript/Script.h>
+#include <Urho3D/AngelScript/ScriptAPI.h>
+#include <Urho3D/AngelScript/ScriptEventListener.h>
+#include <Urho3D/AngelScript/ScriptFile.h>
+#include <Urho3D/AngelScript/ScriptInstance.h>
 #include <Urho3D/Audio/Audio.h>
 #include <Urho3D/Audio/AudioDefs.h>
 #include <Urho3D/Audio/BufferedSoundStream.h>
@@ -197,13 +204,6 @@
 #include <Urho3D/Scene/UnknownComponent.h>
 #include <Urho3D/Scene/ValueAnimation.h>
 #include <Urho3D/Scene/ValueAnimationInfo.h>
-#include <Urho3D/Script/Addons.h>
-#include <Urho3D/Script/APITemplates.h>
-#include <Urho3D/Script/Script.h>
-#include <Urho3D/Script/ScriptAPI.h>
-#include <Urho3D/Script/ScriptEventListener.h>
-#include <Urho3D/Script/ScriptFile.h>
-#include <Urho3D/Script/ScriptInstance.h>
 #include <Urho3D/UI/BorderImage.h>
 #include <Urho3D/UI/Button.h>
 #include <Urho3D/UI/CheckBox.h>
