@@ -1,11 +1,11 @@
-// Version: 2015.09.30 03:37:32
+// Version: 2015.12.28 17:03:21
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
 
 #include <Urho3D/Urho3D.h>
 
-#include <Urho3D/Revision.h>
+#include <Urho3D/LibraryInfo.h>
 #include <Urho3D/AngelScript/Addons.h>
 #include <Urho3D/AngelScript/APITemplates.h>
 #include <Urho3D/AngelScript/Script.h>
@@ -15,6 +15,7 @@
 #include <Urho3D/AngelScript/ScriptInstance.h>
 #include <Urho3D/Audio/Audio.h>
 #include <Urho3D/Audio/AudioDefs.h>
+#include <Urho3D/Audio/AudioEvents.h>
 #include <Urho3D/Audio/BufferedSoundStream.h>
 #include <Urho3D/Audio/OggVorbisSoundStream.h>
 #include <Urho3D/Audio/Sound.h>
