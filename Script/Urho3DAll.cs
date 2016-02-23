@@ -4,7 +4,7 @@ using System.IO;
 
 class Urho3DAll
 {
-    static string PATH = @"d:\MyGames\Urho3D\Build\include";
+    static string PATH = @"d:\MyGames\Urho3D_1_5\Build\include";
 
     static void Main()
     {

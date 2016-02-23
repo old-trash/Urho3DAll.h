@@ -1,4 +1,4 @@
-// Version: 2015.12.28 17:03:21
+// Version: 2016.02.23 12:21:56
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -141,6 +141,7 @@
 #include <Urho3D/Math/Color.h>
 #include <Urho3D/Math/Frustum.h>
 #include <Urho3D/Math/MathDefs.h>
+#include <Urho3D/Math/Matrix2.h>
 #include <Urho3D/Math/Matrix3.h>
 #include <Urho3D/Math/Matrix3x4.h>
 #include <Urho3D/Math/Matrix4.h>
