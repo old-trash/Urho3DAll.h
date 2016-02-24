@@ -32,6 +32,8 @@ class Urho3DAll
                 continue;
             if (str.StartsWith("Urho3D/Database"))
                 continue;
+            if (str.StartsWith("Urho3D/AngelScript"))
+                continue;
             if (str == "Urho3D/LuaScript/ToluaUtils.h")
                 continue;
             if (str == "Urho3D/DebugNew.h")
@@ -47,11 +49,21 @@ class Urho3DAll
         }
 
         result.WriteLine();
+        result.WriteLine("#ifdef URHO3D_ANGELSCRIPT");
+        foreach (string path in Directory.EnumerateFiles(PATH + @"\Urho3D\AngelScript\", "*.*", SearchOption.AllDirectories))
+        {
+            string str = path.Replace('\\', '/').Replace(PATH, "");
+            str = "#    include <" + str + ">";
+            result.WriteLine(str);
+        }
+        result.WriteLine("#endif");
+
+        result.WriteLine();
         result.WriteLine("#if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)");
-        result.WriteLine("    #include <Urho3D/Database/Database.h>");
-        result.WriteLine("    #include <Urho3D/Database/DatabaseEvents.h>");
-        result.WriteLine("    #include <Urho3D/Database/DbConnection.h>");
-        result.WriteLine("    #include <Urho3D/Database/DbResult.h>");
+        result.WriteLine("#    include <Urho3D/Database/Database.h>");
+        result.WriteLine("#    include <Urho3D/Database/DatabaseEvents.h>");
+        result.WriteLine("#    include <Urho3D/Database/DbConnection.h>");
+        result.WriteLine("#    include <Urho3D/Database/DbResult.h>");
         result.WriteLine("#endif");
         result.WriteLine();
         result.WriteLine("#include <Urho3D/DebugNew.h>");

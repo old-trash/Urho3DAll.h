@@ -1,4 +1,4 @@
-// Version: 2016.02.23 12:21:56
+// Version: 2016.02.24 18:39:00
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -6,13 +6,6 @@
 #include <Urho3D/Urho3D.h>
 
 #include <Urho3D/LibraryInfo.h>
-#include <Urho3D/AngelScript/Addons.h>
-#include <Urho3D/AngelScript/APITemplates.h>
-#include <Urho3D/AngelScript/Script.h>
-#include <Urho3D/AngelScript/ScriptAPI.h>
-#include <Urho3D/AngelScript/ScriptEventListener.h>
-#include <Urho3D/AngelScript/ScriptFile.h>
-#include <Urho3D/AngelScript/ScriptInstance.h>
 #include <Urho3D/Audio/Audio.h>
 #include <Urho3D/Audio/AudioDefs.h>
 #include <Urho3D/Audio/AudioEvents.h>
@@ -272,11 +265,21 @@
 #include <Urho3D/Urho2D/TmxFile2D.h>
 #include <Urho3D/Urho2D/Urho2D.h>
 
+#ifdef URHO3D_ANGELSCRIPT
+#    include </Urho3D/AngelScript/Addons.h>
+#    include </Urho3D/AngelScript/APITemplates.h>
+#    include </Urho3D/AngelScript/Script.h>
+#    include </Urho3D/AngelScript/ScriptAPI.h>
+#    include </Urho3D/AngelScript/ScriptEventListener.h>
+#    include </Urho3D/AngelScript/ScriptFile.h>
+#    include </Urho3D/AngelScript/ScriptInstance.h>
+#endif
+
 #if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)
-    #include <Urho3D/Database/Database.h>
-    #include <Urho3D/Database/DatabaseEvents.h>
-    #include <Urho3D/Database/DbConnection.h>
-    #include <Urho3D/Database/DbResult.h>
+#    include <Urho3D/Database/Database.h>
+#    include <Urho3D/Database/DatabaseEvents.h>
+#    include <Urho3D/Database/DbConnection.h>
+#    include <Urho3D/Database/DbResult.h>
 #endif
 
 #include <Urho3D/DebugNew.h>
