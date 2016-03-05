@@ -50,7 +50,7 @@ class Urho3DAll
 
         result.WriteLine();
         result.WriteLine("#ifdef URHO3D_ANGELSCRIPT");
-        foreach (string path in Directory.EnumerateFiles(PATH + @"\Urho3D\AngelScript\", "*.*", SearchOption.AllDirectories))
+        foreach (string path in Directory.EnumerateFiles(PATH + @"Urho3D\AngelScript\", "*.*", SearchOption.AllDirectories))
         {
             string str = path.Replace('\\', '/').Replace(PATH, "");
             str = "#    include <" + str + ">";

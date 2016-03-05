@@ -1,4 +1,4 @@
-// Version: 2016.02.24 18:39:00
+// Version: 2016.03.05 11:03:49
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -266,13 +266,13 @@
 #include <Urho3D/Urho2D/Urho2D.h>
 
 #ifdef URHO3D_ANGELSCRIPT
-#    include </Urho3D/AngelScript/Addons.h>
-#    include </Urho3D/AngelScript/APITemplates.h>
-#    include </Urho3D/AngelScript/Script.h>
-#    include </Urho3D/AngelScript/ScriptAPI.h>
-#    include </Urho3D/AngelScript/ScriptEventListener.h>
-#    include </Urho3D/AngelScript/ScriptFile.h>
-#    include </Urho3D/AngelScript/ScriptInstance.h>
+#    include <Urho3D/AngelScript/Addons.h>
+#    include <Urho3D/AngelScript/APITemplates.h>
+#    include <Urho3D/AngelScript/Script.h>
+#    include <Urho3D/AngelScript/ScriptAPI.h>
+#    include <Urho3D/AngelScript/ScriptEventListener.h>
+#    include <Urho3D/AngelScript/ScriptFile.h>
+#    include <Urho3D/AngelScript/ScriptInstance.h>
 #endif
 
 #if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)
