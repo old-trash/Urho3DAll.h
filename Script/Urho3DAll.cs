@@ -4,7 +4,7 @@ using System.IO;
 
 class Urho3DAll
 {
-    static string PATH = @"d:\MyGames\Urho3D_1_5\Build\include";
+    static string PATH = @"d:\MyGames\Urho3D15\Build\include";
 
     static void Main()
     {
@@ -34,6 +34,10 @@ class Urho3DAll
                 continue;
             if (str.StartsWith("Urho3D/AngelScript"))
                 continue;
+            if (str.StartsWith("Urho3D/Network"))
+                continue;
+            if (str.StartsWith("Urho3D/Physics"))
+                continue;
             if (str == "Urho3D/LuaScript/ToluaUtils.h")
                 continue;
             if (str == "Urho3D/DebugNew.h")
@@ -51,6 +55,26 @@ class Urho3DAll
         result.WriteLine();
         result.WriteLine("#ifdef URHO3D_ANGELSCRIPT");
         foreach (string path in Directory.EnumerateFiles(PATH + @"Urho3D\AngelScript\", "*.*", SearchOption.AllDirectories))
+        {
+            string str = path.Replace('\\', '/').Replace(PATH, "");
+            str = "#    include <" + str + ">";
+            result.WriteLine(str);
+        }
+        result.WriteLine("#endif");
+        
+        result.WriteLine();
+        result.WriteLine("#ifdef URHO3D_NETWORK");
+        foreach (string path in Directory.EnumerateFiles(PATH + @"Urho3D\Network\", "*.*", SearchOption.AllDirectories))
+        {
+            string str = path.Replace('\\', '/').Replace(PATH, "");
+            str = "#    include <" + str + ">";
+            result.WriteLine(str);
+        }
+        result.WriteLine("#endif");
+
+        result.WriteLine();
+        result.WriteLine("#ifdef URHO3D_PHYSICS");
+        foreach (string path in Directory.EnumerateFiles(PATH + @"Urho3D\Physics\", "*.*", SearchOption.AllDirectories))
         {
             string str = path.Replace('\\', '/').Replace(PATH, "");
             str = "#    include <" + str + ">";

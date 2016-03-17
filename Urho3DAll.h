@@ -1,4 +1,4 @@
-// Version: 2016.03.05 11:03:49
+// Version: 2016.03.17 17:20:01
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -159,18 +159,6 @@
 #include <Urho3D/Navigation/NavigationMesh.h>
 #include <Urho3D/Navigation/Obstacle.h>
 #include <Urho3D/Navigation/OffMeshConnection.h>
-#include <Urho3D/Network/Connection.h>
-#include <Urho3D/Network/HttpRequest.h>
-#include <Urho3D/Network/Network.h>
-#include <Urho3D/Network/NetworkEvents.h>
-#include <Urho3D/Network/NetworkPriority.h>
-#include <Urho3D/Network/Protocol.h>
-#include <Urho3D/Physics/CollisionShape.h>
-#include <Urho3D/Physics/Constraint.h>
-#include <Urho3D/Physics/PhysicsEvents.h>
-#include <Urho3D/Physics/PhysicsUtils.h>
-#include <Urho3D/Physics/PhysicsWorld.h>
-#include <Urho3D/Physics/RigidBody.h>
 #include <Urho3D/Resource/BackgroundLoader.h>
 #include <Urho3D/Resource/Decompress.h>
 #include <Urho3D/Resource/Image.h>
@@ -273,6 +261,24 @@
 #    include <Urho3D/AngelScript/ScriptEventListener.h>
 #    include <Urho3D/AngelScript/ScriptFile.h>
 #    include <Urho3D/AngelScript/ScriptInstance.h>
+#endif
+
+#ifdef URHO3D_NETWORK
+#    include <Urho3D/Network/Connection.h>
+#    include <Urho3D/Network/HttpRequest.h>
+#    include <Urho3D/Network/Network.h>
+#    include <Urho3D/Network/NetworkEvents.h>
+#    include <Urho3D/Network/NetworkPriority.h>
+#    include <Urho3D/Network/Protocol.h>
+#endif
+
+#ifdef URHO3D_PHYSICS
+#    include <Urho3D/Physics/CollisionShape.h>
+#    include <Urho3D/Physics/Constraint.h>
+#    include <Urho3D/Physics/PhysicsEvents.h>
+#    include <Urho3D/Physics/PhysicsUtils.h>
+#    include <Urho3D/Physics/PhysicsWorld.h>
+#    include <Urho3D/Physics/RigidBody.h>
 #endif
 
 #if defined(URHO3D_DATABASE_ODBC) || defined(URHO3D_DATABASE_SQLITE)
