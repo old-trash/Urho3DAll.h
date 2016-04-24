@@ -1,4 +1,4 @@
-// Version: 2016.03.17 17:20:01
+// Version: 2016.04.24 09:01:07
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -100,6 +100,7 @@
 #include <Urho3D/Graphics/TerrainPatch.h>
 #include <Urho3D/Graphics/Texture.h>
 #include <Urho3D/Graphics/Texture2D.h>
+#include <Urho3D/Graphics/Texture2DArray.h>
 #include <Urho3D/Graphics/Texture3D.h>
 #include <Urho3D/Graphics/TextureCube.h>
 #include <Urho3D/Graphics/VertexBuffer.h>
