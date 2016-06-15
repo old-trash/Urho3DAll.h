@@ -1,4 +1,4 @@
-// Version: 2016.04.24 09:01:07
+// Version: 2016.06.15 22:35:00
 // Latest version: https://github.com/1vanK/Urho3DAll.h
 
 #pragma once
@@ -38,6 +38,7 @@
 #include <Urho3D/Core/Condition.h>
 #include <Urho3D/Core/Context.h>
 #include <Urho3D/Core/CoreEvents.h>
+#include <Urho3D/Core/EventProfiler.h>
 #include <Urho3D/Core/Main.h>
 #include <Urho3D/Core/MiniDump.h>
 #include <Urho3D/Core/Mutex.h>
@@ -86,6 +87,7 @@
 #include <Urho3D/Graphics/Renderer.h>
 #include <Urho3D/Graphics/RenderPath.h>
 #include <Urho3D/Graphics/RenderSurface.h>
+#include <Urho3D/Graphics/RibbonTrail.h>
 #include <Urho3D/Graphics/Shader.h>
 #include <Urho3D/Graphics/ShaderPrecache.h>
 #include <Urho3D/Graphics/ShaderProgram.h>
@@ -120,6 +122,7 @@
 #include <Urho3D/IO/Log.h>
 #include <Urho3D/IO/MacFileWatcher.h>
 #include <Urho3D/IO/MemoryBuffer.h>
+#include <Urho3D/IO/NamedPipe.h>
 #include <Urho3D/IO/PackageFile.h>
 #include <Urho3D/IO/RWOpsWrapper.h>
 #include <Urho3D/IO/Serializer.h>
